@@ -1,0 +1,63 @@
+#intro {
+    color: #ffffff;
+    position: absolute;
+    font-size: 4em;
+    top: 33%;
+    left: 10%;
+}
+
+#greeting {
+    color: #ffffff;
+    position: absolute;
+    font-size: 4em;
+    top: 40%;
+    left: 10%;
+}
+
+
+.container {
+    overflow: hidden;
+    position: fixed;
+    top: 50%; /* Adjusted top position */
+    left: 10%; /* Adjusted left position */
+}
+
+.container .text {
+    position: relative;
+    color:  #6AB5FF;
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+
+.text.sec-text::before {
+    content: "";
+    position: absolute;
+    top: 0; /* Adjusted top position */
+    left: -100%; /* Starts off screen to the left */
+    height: 100%;
+    width: 100%;
+    background-color: #0E3A5E;
+    border-left: 2px solid #4070F4;
+    animation: animate 2s steps(12) infinite;
+}
+
+
+
+@keyframes animate {
+    0% {
+        left: 0%;
+    }
+    40% {
+        left: 100%; /* Moves right quickly */
+    }
+    60% {
+        left: 100%; /* Stays at the destination */
+    }
+    80%{
+        left: 100%;
+    }
+    100% {
+        left: 0%; /* Returns slower */
+    }
+}

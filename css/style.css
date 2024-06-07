@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Consolas;
+}
+
+body {
+    background-color: #0E3A5E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    top: 3%;
+    left: 50%;
+}
+
+nav a {
+    position: relative;
+    margin: 0 30px;
+    font-size: 1.4em;
+    color: #ffffff;
+    text-decoration: none; 
+}
+
+img {
+    position: fixed;
+    top: 15%;
+    left: 60%;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    background-color: #6AC6E8; /* Blue color */
+    height: 6px; /* Increase the height for a thicker underline */
+    width: 0;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+    border-radius: 10px; /* Oval-shaped underline */
+}
+
+
+a:hover:after {
+    width: 100%;
+}
+

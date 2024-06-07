@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh; /* Changed from height to min-height */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    margin-top: -150px; /* Negative margin to move the container up */
+    margin-left: -1px; /* Negative margin to move the container left */
+    display: flex;
+    justify-content: center; /* Centers the blocks horizontally */
+    flex-wrap: wrap; /* Allows the blocks to wrap to a new line if there isn't enough space */
+}
+.Tender_block {
+    width: 370px;
+    height: 500px;
+    background-color: #0c3150;
+    border-radius: 20px;
+    margin: 20px; /* Add more space around the blocks */
+}
+
+.ApoMarket{
+    width: 370px;
+    height: 500px;
+    background-color: #0c3150;
+    border-radius: 20px;
+    margin: 20px; /* Add more space around the blocks */
+}
+
+.PersonalWebsite{
+    width: 370px;
+    height: 500px;
+    background-color: #0c3150;
+    border-radius: 20px;
+    margin: 20px; /* Add more space around the blocks */
+
+}
+
+.Tender_block, .ApoMarket, .PersonalWebsite {
+    /* ... existing styles ... */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.Tender_block:hover, .ApoMarket:hover, .PersonalWebsite:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
