@@ -6,7 +6,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    overflow-y: auto; /* Added overflow-y to enable vertical scrolling */
+    overflow-y: auto; 
     min-height: 100vh;
 }
 
@@ -26,13 +26,79 @@ body {
     margin: 20px;
 }
 
-.Tender_block {
+/*Tender block */
+.Tender_block { 
     background-image: url('../assest/Tender - Laptop.png');
     background-size: 100%;
     background-repeat: no-repeat;
-    background-position: 10% 10%;
+    background-position: 10% -50%;
 }
 
+.Tender_block p {
+    color: white;
+    padding: 10px;
+    margin-top: 280px; 
+    text-align: center;
+}
+
+.Tender_github {
+    /* image */
+    background-image: url('../assest/github_logo\ \(white\).png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+
+    /* button */
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(85, 72, 228);
+    border-radius: 10%;
+    color: #fff;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
+.Tender_demo{
+    /* image */
+    background-image: url('../assest/play_symbole\ \(1\).png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+
+    /* button */
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(85, 72, 228);
+    border-radius: 10%;
+    color: #fff;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 70px;
+    margin-top: 10px;
+    font-size: 18px;
+    padding-right: 10px;
+
+}
+
+/* ApoMarket block */
+
+.ApoMarket p {
+    color: white;
+    padding: 10px;
+    margin-top: 280px; 
+    text-align: center;
+}
+
+
+/* hover animation */
 .Tender_block, .ApoMarket, .PersonalWebsite {
     transition: transform 0.3s ease;
 }
