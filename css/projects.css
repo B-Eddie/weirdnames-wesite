@@ -26,9 +26,29 @@ body {
     margin: 20px;
 }
 
+.common_button {
+    /* shared styles */
+    display: inline-block;
+    width: 100px;
+    height: 40px;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 10% 50%;
+    background-color: rgb(85, 72, 228);
+    border-radius: 10%;
+    color: #fff;
+    line-height: 42px;
+    text-decoration: none;
+    text-align: right;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-size: 18px;
+    padding-right: 10px;
+}
+
 /*Tender block */
 .Tender_block { 
-    background-image: url('../assest/Tender - Laptop.png');
+    background-image: url('../assest/Tender_laptop__2_transparent.png');
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: 10% -50%;
@@ -44,51 +64,21 @@ body {
 .Tender_github {
     /* image */
     background-image: url('../assest/github_logo\ \(white\).png');
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-
-    /* button */
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    background-color: rgb(85, 72, 228);
-    border-radius: 10%;
-    color: #fff;
-    line-height: 42px;
-    text-decoration: none;
-    text-align: right;
-    margin-left: 50px;
-    margin-top: 50px;
-    font-size: 18px;
-    padding-right: 10px;
 }
 
 .Tender_demo{
     /* image */
     background-image: url('../assest/play_symbole\ \(1\).png');
-    background-size: 30%;
-    background-repeat: no-repeat;
-    background-position: 10% 50%;
-
-    /* button */
-    display: inline-block;
-    width: 100px;
-    height: 40px;
-    background-color: rgb(85, 72, 228);
-    border-radius: 10%;
-    color: #fff;
-    line-height: 42px;
-    text-decoration: none;
-    text-align: right;
-    margin-left: 70px;
-    margin-top: 10px;
-    font-size: 18px;
-    padding-right: 10px;
-
 }
 
 /* ApoMarket block */
+
+.ApoMarket{ 
+    background-image: url('../assest/ApoMarket_laptop_mockup_transparent.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% -50%;
+}
 
 .ApoMarket p {
     color: white;
@@ -97,6 +87,44 @@ body {
     text-align: center;
 }
 
+
+.ApoMarket_github {
+    /* image */
+    background-image: url('../assest/github_logo\ \(white\).png');
+}
+
+.ApoMarket_demo{
+    /* image */
+    background-image: url('../assest/play_symbole\ \(1\).png');
+}
+
+/* Personal Website block */
+
+.PersonalWebsite{ 
+    background-image: url('../assest/personal_website_laptop.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 10% -50%;
+}
+
+.PersonalWebsite p {
+    color: white;
+    padding: 10px;
+    margin-top: 280px; 
+    text-align: center;
+}
+
+
+.PersonalWebsite_github {
+    /* image */
+    background-image: url('../assest/github_logo\ \(white\).png');
+}
+
+.PersonalWebsite_demo{
+    /* image */
+    background-image: url('../assest/play_symbole\ \(1\).png');
+
+}
 
 /* hover animation */
 .Tender_block, .ApoMarket, .PersonalWebsite {
