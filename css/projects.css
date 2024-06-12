@@ -1,45 +1,4 @@
-@property --gradien-angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
 
-@keyframes rotation{
-    0% { --gradient-angle: 0deg; }
-    100% { --gradient-angle: 360deg; }
-}
-
-:root{
-    --clr-1: #052b2f;
-    --clr-2: #073438;
-    --clr-3: #0e4b50;
-    --clr-4: #2d8f85;
-    --clr-5: #637c54;
-    --clr-gradient-1: #0077b6; /* first color for the gradient */
-    --clr-gradient-2: #023e8a; /* second color for the gradient */
-    --clr-glow: #00b4d8; /* color for the glow */
-    --gradient-angle: 0deg; /* initial angle for the gradient */
-}
-
-.block::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: linear-gradient(
-        var(--gradient-angle),
-        var(--clr-gradient-1),
-        var(--clr-gradient-2));
-    border-radius: 20px;
-    z-index: -1;
-    box-shadow: 0 0 10px var(--clr-glow), 0 0 20px var(--clr-glow), 0 0 30px var(--clr-glow), 0 0 40px var(--clr-glow);
-}
-
-.block::after{
-    filter: blur(3.5px);
-}
 body {
     margin: 0;
     padding: 0;
@@ -65,15 +24,6 @@ body {
     width: 400px;
     height: 550px;
     background-color: #0c3150;
-    border-radius: 20px;
-    margin: 20px;
-    inset: 0;
-}
-.block {
-    position: relative;
-    width: 400px;
-    height: 550px;
-    background-color: var(--clr-3);
     border-radius: 20px;
     margin: 20px;
 }
@@ -125,7 +75,7 @@ body {
 }
 
 
-
+/* AoMarket block */
 .ApoMarket{ 
     background-image: url('../assest/ApoMarket_laptop_mockup_transparent.png');
     background-size: 100%;
@@ -152,7 +102,7 @@ body {
 }
 
 
-
+/* Personal Website block */
 .PersonalWebsite{ 
     background-image: url('../assest/personal_website_laptop.png');
     background-size: 100%;
